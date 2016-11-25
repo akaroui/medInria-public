@@ -15,7 +15,7 @@
 
 #include <dtkLog/dtkLog.h>
 
-#include <vtkLogForwarder.h>
+//#include <vtkLogForwarder.h>
 
 #include <medVtkFibersData.h>
 #include <medVtkFibersDataWriter.h>
@@ -31,14 +31,14 @@ class medVtkFibersDataPluginPrivate
 public:
     medVtkFibersDataPluginPrivate()
     {
-        forwarder = vtkLogForwarder::New();
+  //      forwarder = vtkLogForwarder::New();
     }
     ~medVtkFibersDataPluginPrivate()
     {
-        forwarder->Delete();
+    //    forwarder->Delete();
     }
     // Class variables go here.
-    vtkLogForwarder* forwarder;
+    //vtkLogForwarder* forwarder;
 };
 
 // /////////////////////////////////////////////////////////////////

@@ -26,7 +26,7 @@
 
 #include <dtkLog/dtkLog.h>
 
-#include <vtkLogForwarder.h>
+//#include <vtkLogForwarder.h>
 
 // /////////////////////////////////////////////////////////////////
 // vtkDataMeshPluginPrivate
@@ -37,14 +37,14 @@ class vtkDataMeshPluginPrivate
 public:
   vtkDataMeshPluginPrivate()
   {
-      forwarder = vtkLogForwarder::New();
+  //    forwarder = vtkLogForwarder::New();
   }
   ~vtkDataMeshPluginPrivate()
   {
-      forwarder->Delete();
+    //  forwarder->Delete();
   }
   // Class variables go here.
-  vtkLogForwarder* forwarder;
+  //vtkLogForwarder* forwarder;
 };
 
 // /////////////////////////////////////////////////////////////////
